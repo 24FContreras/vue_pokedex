@@ -17,9 +17,8 @@ Learning project made with Vue JS, using composition API, vue router and pinia f
 
 The app has four sections: Home, Pokemons, Favorites and Pokemon View. This project was developed using vue 3 and bootstrap.
 
-### Screenshot
-
 ![](./src/assets/vue_pokedex_preview.png)
+Live Site URL: [vuepokefider](https://vuepokefinder.netlify.app/)
 
 ## Site Map
 
