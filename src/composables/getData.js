@@ -11,9 +11,11 @@ export const useGetData = () => {
     try {
       const res = await axios.get(url);
       data.value = res.data;
+
+      return res.data;
     } catch (error) {
       data.value = false;
-      errorData.value = "Error de servidor";
+      errorData.value = "Server error. Please try again later";
     } finally {
       loading.value = false;
     }
