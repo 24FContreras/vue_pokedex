@@ -30,7 +30,7 @@ const travelBack = () => {
 <template>
   <main class="container py-4 px-4 px-md-0">
     <div class="spinner-border" role="status" v-if="loading">
-      <span class="visually-hidden">Cargando pokemon...</span>
+      <span class="visually-hidden">Loading pokemon...</span>
     </div>
 
     <div class="row row-cols-3 g-5" v-if="data">
@@ -145,7 +145,7 @@ const travelBack = () => {
       </div>
     </div>
 
-    <div v-if="errorData"><h1>No existe el pokemon</h1></div>
+    <div v-if="errorData"><h1>The requested pokemon does not exist</h1></div>
   </main>
 </template>
 

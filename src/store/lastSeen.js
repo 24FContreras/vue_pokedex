@@ -9,6 +9,10 @@ export const useLastSeenStore = defineStore("lastSeen", () => {
   }
 
   const updateLastSeen = (poke) => {
+    if (!poke) {
+      return false;
+    }
+
     const indexInArray = lastSeen.value.findIndex(
       (pokemon) => pokemon.id === poke.id
     );

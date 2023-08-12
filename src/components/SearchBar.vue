@@ -5,7 +5,7 @@ import router from "./../router";
 const search = ref("");
 
 const handleSearch = () => {
-  router.push(`/pokemons/${search.value}`);
+  router.push(`/pokemons/${search.value.toLowerCase()}`);
 };
 </script>
 
